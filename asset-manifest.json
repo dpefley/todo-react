@@ -1,13 +1,13 @@
 {
-  "main.css": "/09-todo-react/static/css/main.11d832ee.chunk.css",
-  "main.js": "/09-todo-react/static/js/main.805fac46.chunk.js",
-  "main.js.map": "/09-todo-react/static/js/main.805fac46.chunk.js.map",
-  "runtime~main.js": "/09-todo-react/static/js/runtime~main.ea0679f5.js",
-  "runtime~main.js.map": "/09-todo-react/static/js/runtime~main.ea0679f5.js.map",
-  "static/js/2.ed1a1e90.chunk.js": "/09-todo-react/static/js/2.ed1a1e90.chunk.js",
-  "static/js/2.ed1a1e90.chunk.js.map": "/09-todo-react/static/js/2.ed1a1e90.chunk.js.map",
-  "index.html": "/09-todo-react/index.html",
-  "precache-manifest.f629815e97f95bb282dda6b27320b94a.js": "/09-todo-react/precache-manifest.f629815e97f95bb282dda6b27320b94a.js",
-  "service-worker.js": "/09-todo-react/service-worker.js",
-  "static/css/main.11d832ee.chunk.css.map": "/09-todo-react/static/css/main.11d832ee.chunk.css.map"
+  "main.css": "/09-todo-react-dpefley/static/css/main.11d832ee.chunk.css",
+  "main.js": "/09-todo-react-dpefley/static/js/main.805fac46.chunk.js",
+  "main.js.map": "/09-todo-react-dpefley/static/js/main.805fac46.chunk.js.map",
+  "runtime~main.js": "/09-todo-react-dpefley/static/js/runtime~main.db68949f.js",
+  "runtime~main.js.map": "/09-todo-react-dpefley/static/js/runtime~main.db68949f.js.map",
+  "static/js/2.ed1a1e90.chunk.js": "/09-todo-react-dpefley/static/js/2.ed1a1e90.chunk.js",
+  "static/js/2.ed1a1e90.chunk.js.map": "/09-todo-react-dpefley/static/js/2.ed1a1e90.chunk.js.map",
+  "index.html": "/09-todo-react-dpefley/index.html",
+  "precache-manifest.9241b0d98a15fec5ed17e8d7a9fb82dc.js": "/09-todo-react-dpefley/precache-manifest.9241b0d98a15fec5ed17e8d7a9fb82dc.js",
+  "service-worker.js": "/09-todo-react-dpefley/service-worker.js",
+  "static/css/main.11d832ee.chunk.css.map": "/09-todo-react-dpefley/static/css/main.11d832ee.chunk.css.map"
 }
