@@ -6,21 +6,46 @@ import './Todo.css';
 class Todo extends Component {
   constructor(props) {
     super(props)
+
+    this.state = {
+      text: '',
+      id: '',
+      complete: false
+    }
+
+    this.findIdAndUpdate = this.findIdAndUpdate.bind(this);
+  }
+
+  findIdAndUpdate() {
+    var xhttp2 = new XMLHttpRequest();
+
+    var completed = this.props.complete;
+    var completeTo = !completed;
+    var data = {
+      complete: false
+    };
+
+    xhttp2.onreadystatechange = function() {
+      if (xhttp2.readyState == 4 && xhttp2.status == 200) {
+        retrieveAJAX();
+      }
+      else if (this.readyState == 4) {
+        console.log(this.responseText);
+      }
+    };
+
+    xhttp2.open("PUT", "https://api.kraigh.net/todos/"+this.props.id);
+    xhttp2.setRequestHeader("Content-type", "application/json");
+    xhttp2.setRequestHeader("x-api-key", "9b99af89b8927089828bb405cb26692c2640e47a89638e3b1cb55dcd7f813c99");
+    xhttp2.send(JSON.stringify(data));
   }
 
   render() {
     return (
-      // <div>
-      //   <input type="checkbox" onclick={this.props.findIdAndUpdate(this)}></input>
-      //   <button onClick={this.props.findIdAndDelete}>Delete</button>
-      //   <p>{this.props.todoText}</p>
-      // </div>
-
-
-    		<div id="todo" className="todo">
-    			<input type="checkbox" name="complete" value="Done" id="complete" onclick={this.props.findIdAndUpdate}></input>
-    			<button type="button" name="delete" id="delete" onclick={this.props.findIdAndDelete}>Delete</button>
-    			<div id={this.props.todoText}>New Todo</div>
+    		<div id={this.props.id} className="todo">
+    			<input type="checkbox" name="complete" value="Done" id="complete" onClick={this.findIdAndUpdate}></input>
+    			<button type="button" name="delete" id="delete" onClick={this.props.findIdAndDelete}>Delete</button>
+    			<div>{this.props.text}</div>
     		</div>
     );
   }
