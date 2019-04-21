@@ -3,6 +3,14 @@
   margin-right: 15px;
 }
 
+.todo {
+
+}
+
+.todo_completed {
+  background-color: green;
+}
+
 #example {
   visibility: hidden;
 }
@@ -30,4 +38,3 @@ button {
   display: inline-block;
   font-size: 16px;
 }
-
