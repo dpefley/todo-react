@@ -1,0 +1,21 @@
+/* https://stackoverflow.com/questions/24322599/css-why-cannot-change-checkbox-color-whatever-i-do */
+input[type="checkbox"] {
+  filter: invert(100%) hue-rotate(18deg) brightness(1.7);
+}
+
+/* https://www.w3schools.com/css/css3_buttons.asp */
+button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#complete, #delete, #todoText {
+  float: left;
+  margin-right: 15px;
+}

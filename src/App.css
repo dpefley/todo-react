@@ -1,0 +1,11 @@
+
+
+#example {
+  visibility: hidden;
+}
+
+body {
+  background-color: #EFEFEF;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
