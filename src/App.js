@@ -25,7 +25,13 @@ class App extends Component {
     xhttp2.onreadystatechange = function() {
       if (xhttp2.readyState === 4 && xhttp2.status === 200) {
         var todo = JSON.parse(xhttp2.responseText);
+
+        todo.sort(function (a, b) {
+          return a.text.localeCompare(b.text);
+        });
+
         self.setState({todos: todo});
+
         console.log(todo);
       }
     };
@@ -60,7 +66,13 @@ class App extends Component {
           //console.log(todo);
           // retrieveAJAX();
           self.setState({
-            todos: [...self.state.todos, JSON.parse(this.responseText)]});
+            todos: [...self.state.todos, JSON.parse(this.responseText)]
+          });
+
+          self.state.todos.sort(function (a, b) {
+            return a.text.localeCompare(b.text);
+          });
+
           self.setState({input: ''});
         }
         else if (this.readyState === 4) {
@@ -81,7 +93,7 @@ class App extends Component {
     var id = event.target.parentNode.id;
     var self = this;
     xhttp2.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
+      if (this.readyState === 4 && this.status === 200) {
         // var todo = JSON.parse(this.responseText);
         //console.log(todo);
         const remainingTodos = self.state.todos.filter((todo) => {
@@ -95,7 +107,7 @@ class App extends Component {
           todos: remainingTodos
         });
       }
-      else if (self.readyState == 4) {
+      else if (self.readyState === 4) {
         console.log(this.responseText);
       }
     };

@@ -18,7 +18,7 @@
 body {
   background-color: #EFEFEF;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-align: center;
+  text-align: left;
 }
 
 /* https://stackoverflow.com/questions/24322599/css-why-cannot-change-checkbox-color-whatever-i-do */

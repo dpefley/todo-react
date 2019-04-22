@@ -19,9 +19,7 @@ class Todo extends Component {
 
     var self = this;
     var id = event.target.parentNode.id;
-    console.log(id);
-    var completed = self.state.complete;
-    var completeTo = !completed;
+    
     var data = {
       completed: true
     };
